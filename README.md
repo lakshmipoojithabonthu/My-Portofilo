@@ -22,13 +22,13 @@ Download or clone the repository
 Open index.html in any browser
 
 Method 2: Using Terminal
-# Clone the repository
+## Clone the repository
 git clone https://github.com/lakshmipoojithabonthu/My-Portofilo.git
 
 # Navigate into the folder
 cd My-Portofilo
 
-# Open index.html (Windows)
+## Open index.html (Windows)
 start index.html
 
 ## 👩‍💻 Author
