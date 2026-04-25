@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lakshmi Poojitha Bonthu portfolio website built with HTML, CSS, and JavaScript."
+    />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css?v=5" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <nav class="navbar" aria-label="Main navigation">
+          <a class="brand" href="#home">
+            <span class="brand__title">Lakshmi Poojitha</span>
+          </a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-links"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#awards">Award & Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="section-nav" aria-label="Section navigation">
+          <button
+            class="section-nav__btn"
+            type="button"
+            id="prev-section"
+            aria-label="Go to previous section"
+          >
+            &#8592;
+          </button>
+          <button
+            class="section-nav__btn"
+            type="button"
+            id="next-section"
+            aria-label="Go to next section"
+          >
+            &#8594;
+          </button>
+        </div>
+
+        <div class="section-slider" id="section-slider">
+          <section class="hero panel is-active" id="home" data-index="0">
+            <div class="reveal">
+              <div class="eyebrow">Portfolio</div>
+              <h1>
+                Hello, I am
+                <span>Lakshmi Poojitha</span>
+                And I'm a <span class="role">Frontend Developer</span>
+              </h1>
+              <p>
+                I'm Lakshmi Poojitha Bonthu, a B.Tech CSE student at SRM AP. I
+                love creating modern websites with HTML, CSS, and JavaScript.
+              </p>
+
+              <div class="social-links" aria-label="Social links">
+                <a href="mailto:lakshmipoojithabonthu@gmail.com" aria-label="Email">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 6h16v12H4z" />
+                    <path d="m4 7 8 6 8-6" />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/Lakshmipoojithabonthu"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true" class="fill-icon">
+                    <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49v-1.75c-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.56 2.36 1.11 2.93.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 7.1c.85 0 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.65c0 .27.18.59.69.49A10.07 10.07 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/lakshmi-poojitha-bonthu-509653377/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true" class="fill-icon">
+                    <path d="M6.94 8.98H3.75V20h3.19V8.98zM5.35 4a1.85 1.85 0 1 0 0 3.7 1.85 1.85 0 0 0 0-3.7zm5.38 4.98H7.68V20h3.18v-5.77c0-1.52.29-2.99 2.17-2.99 1.85 0 1.87 1.73 1.87 3.08V20h3.18v-6.4c0-3.14-.67-5.55-4.34-5.55-1.76 0-2.94.97-3.43 1.89h-.04V8.98z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero__card reveal">
+              <div class="profile-card has-photo">
+                <div class="profile-orbit orbit-one"></div>
+                <div class="profile-orbit orbit-two"></div>
+                <div class="profile-photo is-loaded" aria-label="Profile picture">
+                  <img
+                    id="profile-image"
+                    src="profile.jpg"
+                    alt="Lakshmi Poojitha portrait"
+                  />
+                  <span id="profile-fallback">LP</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section panel" id="about" data-index="1">
+            <div class="section__header reveal">
+              <div>
+                <div class="eyebrow">About Me</div>
+              
+              </div>
+          
+            </div>
+
+            <div class="about-layout">
+              <article class="card reveal">
+                <h3>Profile</h3>
+                <p>
+                  Hi,I am Lakshmi Poojitha.I am from Eluru, and I am studying at SRM AP University in
+                  B.Tech 3rd year CSE(AI & ML). I enjoy watching TV, playing games, and
+                  exploring how websites are built with HTML, CSS, and
+                  JavaScript.I want to become a frontend developer.
+                </p>
+              </article>
+
+              <div class="timeline reveal">
+                <div class="timeline__item">
+                  <span>Education</span>
+                  <h3>SRM AP University, Amaravati</h3>
+                  <p>B.Tech CSE(AI&ML) 2023-2027</p>
+                  <h3>Sri Bhavishya Junior College, Vijayawada</h3>
+                  <p>MPC 2021-2023</p>
+                  <h3>Bhashyam Educational Institutions,Chintalapudi</h3>
+                  <p> 2012-2021</p>
+                </div>
+                
+                <div class="timeline__item">
+                  <span>Hobbies</span>
+                  <h3>Things I Enjoy</h3>
+                  <p>Reading, playing games, traveling, watching TV</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section panel" id="skills" data-index="2">
+            <div class="section__header reveal">
+              <div>
+                <h2>My Skills</h2>
+                
+              </div>
+            </div>
+
+            <div class="skills-showcase reveal">
+              <div class="technical-skills">
+                <h3>Technical Skills</h3>
+                <div class="skill-bars">
+                <div class="skill-row" style="--level: 99%">
+                  <div class="skill-icon html">5</div>
+                  <div class="skill-info">
+                    <span>HTML</span>
+                    <div class="skill-track"><i></i><b>98%</b></div>
+                  </div>
+                </div>
+                <div class="skill-row" style="--level: 80%">
+                  <div class="skill-icon css">3</div>
+                  <div class="skill-info">
+                    <span>CSS</span>
+                    <div class="skill-track"><i></i><b>80%</b></div>
+                  </div>
+                </div>
+                <div class="skill-row" style="--level: 55%">
+                  <div class="skill-icon js">JS</div>
+                  <div class="skill-info">
+                    <span>JavaScript</span>
+                    <div class="skill-track"><i></i><b>55%</b></div>
+                  </div>
+                </div>
+                <div class="skill-row" style="--level: 50%">
+                  <div class="skill-icon python">Py</div>
+                  <div class="skill-info">
+                    <span>Python</span>
+                    <div class="skill-track"><i></i><b>50%</b></div>
+                  </div>
+                </div>
+                <div class="skill-row" style="--level: 75%">
+                  <div class="skill-icon c">C</div>
+                  <div class="skill-info">
+                    <span>C</span>
+                    <div class="skill-track"><i></i><b>75%</b></div>
+                  </div>
+                </div>
+                <div class="skill-row" style="--level: 70%">
+                  <div class="skill-icon cpp">C++</div>
+                  <div class="skill-info">
+                    <span>C++</span>
+                    <div class="skill-track"><i></i><b>70%</b></div>
+                  </div>
+                </div>
+                <div class="skill-row" style="--level: 40%">
+                  <div class="skill-icon react">R</div>
+                  <div class="skill-info">
+                    <span>React</span>
+                    <div class="skill-track"><i></i><b>40%</b></div>
+                  </div>
+                </div>
+                </div> 
+              </div>
+              <div class="professional-skills">
+                <h3>Professional Skills</h3>
+                <div class="circle-skills">
+                  <div class="circle-skill" style="--percent: 90%">
+                    <div class="circle-meter"><span>90%</span></div>
+                    <p>Creativity</p>
+                  </div>
+                  <div class="circle-skill" style="--percent: 85%">
+                    <div class="circle-meter"><span>85%</span></div>
+                    <p>Communication</p>
+                  </div>
+                  <div class="circle-skill" style="--percent: 80%">
+                    <div class="circle-meter"><span>80%</span></div>
+                    <p>Problem Solving</p>
+                  </div>
+                  <div class="circle-skill" style="--percent: 88%">
+                    <div class="circle-meter"><span>88%</span></div>
+                    <p>Teamwork</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section panel" id="projects" data-index="3">
+            <div class="section__header reveal">
+              <div>
+                <h2>My Projects</h2>
+              </div>
+            </div>
+
+            <div class="project-grid">
+              <article class="card project-card reveal" data-category="frontend javascript">
+                <div class="project-card__thumb">Personal Portfolio Site</div>
+                <div class="project-card__meta">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <p>
+                  A responsive portfolio site designed to present my profile,
+                  skills, and projects in a clean and modern layout.
+                </p>
+              </article>
+
+              <article class="card project-card reveal" data-category="frontend student">
+                <div class="project-card__thumb">2D Flappy Bird Game</div>
+                <div class="project-card__meta">
+                  <span class="tag">Python</span>
+                  <span class="tag">Pygame</span>
+                </div>
+                <p>
+                  Built a 2D Flappy Bird style game with gameplay logic,
+                  movement, and scoring features using Python and Pygame.
+                </p>
+              </article>
+
+              <article class="card project-card reveal" data-category="javascript student">
+                <div class="project-card__thumb">E-commerce Website</div>
+                <div class="project-card__meta">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                </div>
+                <p>
+                  Designed and developed an E-commerce website using HTML, CSS,
+                  JavaScript, PHP, and MySQL with responsive UI and backend
+                  support.
+                </p>
+              </article>
+
+              <article class="card project-card reveal" data-category="frontend student">
+                <div class="project-card__thumb">Cook Book</div>
+                <div class="project-card__meta">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">React</span>
+                </div>
+                <p>
+                  Developed Cook Book, a virtual kitchen assistant with an
+                  interactive interface to browse recipes and cooking steps.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section panel" id="awards" data-index="4">
+            <div class="section__header reveal">
+              <div>
+                <h2>My Awards & Certifications</h2>
+              </div>
+            </div>
+
+            <div class="card achievement-card reveal">
+              <ol class="achievement-list">
+                <li>
+                  <strong>Reliance Foundation Scholarship</strong>
+                  Selected for the Reliance Foundation Scholarship, a merit-based
+                  award recognizing academic excellence and leadership, valued at
+                  2,00,000 over 4 years.
+                </li>
+                <li>
+                  <strong>Salesforce Developer with Agentblazer Champion Program</strong>
+                  Certified Salesforce Developer and AgentBlazer Champion,
+                  recognized for completing advanced Salesforce training and
+                  practical projects during internship.
+                </li>
+                <li>
+                  <strong>Oracle Certified Professional - Java SE 17 Developer</strong>
+                  Earned the globally recognized Java certification, showcasing
+                  strong problem-solving ability and in-depth knowledge of core
+                  and advanced Java concepts.
+                </li>
+                <li>
+                  <strong>Google AI Essentials</strong>
+                  Certified in Google AI Essentials, demonstrating foundational
+                  knowledge in artificial intelligence and practical AI
+                  applications.
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="section panel" id="contact" data-index="5">
+            <div class="section__header reveal">
+              <div>
+                <h2>My Contact</h2>
+              </div>
+            </div>
+
+            <div class="contact-panel">
+              <div class="contact-list reveal">
+                <div class="contact-item">
+                  <span>Email</span>
+                  <a href="mailto:lakshmipoojithabonthu@gmail.com">
+                    lakshmipoojithabonthu@gmail.com
+                  </a>
+                </div>
+                <div class="contact-item">
+                  <span>Phone</span>
+                  <a href="tel:+919989298859">+91 9989298859</a>
+                </div>
+                <div class="contact-item">
+                  <span>LinkedIn</span>
+                  <a
+                    href="https://www.linkedin.com/in/lakshmi-poojitha-bonthu-509653377/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Profile
+                  </a>
+                </div>
+                <div class="contact-item">
+                  <span>GitHub</span>
+                  <a
+                    href="https://github.com/Lakshmipoojithabonthu"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    github.com/Lakshmipoojithabonthu
+                  </a>
+                </div>
+              </div>
+
+              <form class="card contact-form reveal" id="contact-form">
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="Your email" required />
+                </label>
+                <label>
+                  Message
+                  <textarea
+                    name="message"
+                    placeholder="Write your message here"
+                    required
+                  ></textarea>
+                </label>
+                <button class="btn btn--primary" type="submit">Send Message</button>
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Crafted with HTML, CSS, and JavaScript.</p>
+        <p>&copy; <span id="year"></span> Lakshmi Poojitha Bonthu</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
